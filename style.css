@@ -108,16 +108,17 @@ img{
   height: 300px;
 }
 
-.caracteristicas{  
-  padding: 15px 15px 0 15px;
+.margen_estandar{  
+  padding: 0 15px 0 15px;
   margin-bottom: 15px;
 }
 
-.caracteristicas > h2{
+.margen_estandar > h2{
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-.caracteristicas > p{
+.margen_estandar > p{
   font-size: 1rem;
   line-height: 21px;
 }
