@@ -34,6 +34,7 @@ header{
   min-width: 320px;
   height: 120px;
   position: relative;
+  border-bottom: solid 1px #fff;
 }
 
 h1{
@@ -68,49 +69,22 @@ h4{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.toggle {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  margin-left: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+nav{
+  text-align: center;
+}
+nav>div{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
   cursor: pointer;
-  overflow: hidden;
+  border-bottom: thin solid rgba(255, 255, 255, 1);
+
 }
 
-.toggle span {
-  position: absolute;
-  width: 40px;
-  height: 4px;
-  background: rgb(205,15,185);
-  background: linear-gradient(90deg, rgba(205,15,185,1) 0%, rgba(222,90,208,1) 0%, rgba(0,212,255,1) 100%);
-  border-radius: 4px;
-  transition: 0.5s;
-}
-
-.toggle span:nth-child(1) {
-  transform: translateY(-15px);
-}
-
-.toggle.active span:nth-child(1) {
-  transform: translateY(0px) rotate(45deg);
-  transition-delay: 0.125s;
-}
-
-.toggle span:nth-child(2) {
-  transform: translateY(15px);
-}
-
-.toggle.active span:nth-child(2) {
-  transform: translateY(0px) rotate(315deg);
-  transition-delay: 0.25s;
-}
-
-.toggle.active span:nth-child(3) {
-  transform: translateX(60px);
+nav>div>a{
+  color: white;
+  text-decoration: none;
 }
 .introduccion{
   position: relative;
@@ -263,7 +237,7 @@ img{
 
   padding: 8px 20px;
   margin-top: -10px;
-  width: 100%;
+  width: 320px;
   height: 80px;
   cursor: pointer;
   color: #fff;

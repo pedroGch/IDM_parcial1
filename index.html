@@ -14,9 +14,24 @@
     </div>    
   </header>
   <nav>
+    <div>
+        <a href="#intro"><span>Introduccion</span></a>
+    </div>
+    <div>
+        <a href="#caracteristicas_principales"><span>Caracteristicas principales</span></a>
+    </div>
+    <div>
+        <a href="#personajes"><span>Personajes</span></a>
+    </div>
+    <div>
+        <a href="#galeria"><span>Galería</span></a>
+    </div>
+    <div>
+        <a href="#contacto"><span>Formualrio de Contacto</span></a>
+    </div>
   </nav>
   <main>
-    <section class="introduccion">
+    <section class="introduccion" id="intro">
       <img src="img/Banners/banner_1.png" alt="imagen con todos los personajes">
       <h2 class="centrado">Introducción</h2>
       <div class="texto">
@@ -35,7 +50,7 @@
     <div class="video">
       <iframe src="https://www.youtube.com/embed/bo5xnYoOc54" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <section>
+    <section id="caracteristicas_principales">
       <h2>Una querida historia que regresa</h2>
       <div class="margen_estandar">
         <p>
@@ -67,7 +82,7 @@
       <!-- <img src="img/Capturas/lucha_con_amigos.jpg" alt="personajes principales luchando juntos"> -->
       <img src="img/Posters/poster_2.jpg" alt="personajes principales luchando juntos">
     </section>
-    <section>
+    <section id="personajes">
       <h2>Personajes</h2>
       <div class="personajes"> 
         <div class="item">
@@ -180,7 +195,7 @@
         </div>
       </div>
     </section>
-    <section class="galeria">
+    <section class="galeria" id="galeria">
       <h2>Galeria</h2>
       <div><img src="img/Capturas/ataque_especial.jpg" alt="yuri ejecutando su ataque especial"></div>
       <div><img src="img/Capturas/ciudad.jpg" alt="personajes en la ciudad"></div>
@@ -189,17 +204,17 @@
       <div><img src="img/Capturas/combate.jpg" alt="personajes combatiendo"></div>
       <div><img src="img/Capturas/lucha_con_amigos.jpg" alt="yuri y flynn combatiendo juntos"></div>
     </section>
-    <section class="formulario_contacto">
+    <section class="formulario_contacto" id="contacto">
       <h2>Participa por premios exclusivos</h2>
       <div class="container">
         <div class="formBx">
           <form action="#" method="post">
             <div class="inputBox">
-              <input type="text" required="required" autocomplete="off" name="nombre" />
+              <input type="text" required="required" autocomplete="off" name="nombre" >
               <span>Nombre completo</span>
             </div>
             <div class="inputBox">
-              <input type="email" autocomplete="off" required="required" name="email" />
+              <input type="email" autocomplete="off" required="required" name="email" >
               <span>Dirección de Email</span>
             </div>
             <div class="inputBox">
@@ -207,15 +222,9 @@
               <span>Dejanos tu mensaje...</span>
             </div>
             <div class="inputBox">
-              <input type="submit" value="Enviar" />
+              <input type="submit" value="Enviar" >
             </div>
           </form>
-        </div>
-        <div class="imgBx">
-          <picture>
-            <source srcset="./imagenes/tablet/img-contacto-t.jpg" media="(max-width: 800px)" />
-            <img  />
-          </picture>
         </div>
       </div>
     </section>
