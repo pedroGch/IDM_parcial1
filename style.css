@@ -307,5 +307,11 @@ img{
 
 /* FIN SECCION DE CONTACTO*/
 @media screen and (min-width:576px) {
+ *{
+  background-color: azure;
+ }
+}
+
+@media screen and (min-width:993px) {
 
 }
