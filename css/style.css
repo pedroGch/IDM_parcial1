@@ -15,8 +15,19 @@ body{
   radial-gradient(at 68% 33%, hsla(303,72%,60%,1) 0px, transparent 50%);
   color:#ecf0f1;
 }
+
+span{
+  font-family: 'Nunito', sans-serif;
+}
+
 ul{
   list-style:none;
+  font-family: 'Nunito', sans-serif;
+}
+
+ul li{
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 p{
@@ -64,7 +75,7 @@ h4{
 #logo{
   width: 53%;
   height: 100%;
-  background-image: url('img/logo.png');
+  background-image: url('/img/logo.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -164,7 +175,7 @@ img{
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  background: url(img/logo_resumido.png);
+  background: url('/img/logo_resumido.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
@@ -247,7 +258,7 @@ img{
   border: none;
   text-transform: uppercase;
   margin-bottom: 25px;
-  background-image: url(img/logo_resumido_2.jpeg);
+  background-image: url('/img/logo_resumido_2.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -63px;
@@ -288,11 +299,41 @@ img{
   border-bottom-color: rgba(255, 255, 255, 0.8);
 }
 
+.imgBx{
+  display: none;
+}
 
+.footer_contacto{
+  border-top: thin solid white;
+}
+
+#datos_tp{
+  margin: 0 25px;
+}
+
+#logo_davinci{
+  display: inline-block;
+  background-image: url('../img/logo_davinci.png');
+  width: 300px;
+  height: 105px;
+  font-size: 0px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 25px;
+}
+#foto{
+  width: 250px;
+  height: 250px;
+}
+#foto img{
+  border-radius: 50%;
+  margin-left: 25px;
+}
 /* FIN SECCION DE CONTACTO*/
 @media screen and (min-width:576px) {
   .personajes{
-    background-image: url(img/logo_resumido_2.jpeg);
+    background-image: url('/img/logo_resumido_2.jpeg');
     background-position-x: -50px;
     background-size: cover;
     background-repeat: round;
@@ -323,6 +364,13 @@ img{
     justify-content: center;
     align-items: center;
   }
+  #logo_davinci {
+    margin-left: 25%;
+  }
+
+  #foto img {
+    margin-left: 50%;
+}
 }
 
 @media screen and (min-width:993px) {
@@ -453,5 +501,47 @@ img{
     max-height: 100%;
     margin-left: 0px; 
   }
+  #datos_tp{
+    display: flex;
+    margin: 0 15%;
+    align-items: center;
+  }
 
+}
+
+@media screen and (min-width:1460px) {
+  body{
+    max-width: 1460px;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 26px;
+  }
+  .introduccion .texto {
+    left: 50px;
+  }
+  .introduccion > img {
+    margin-top: 39px;
+  }
+  #video_promocional {
+    height: 750px;
+  }
+  .personajes .item {
+    margin: 17% auto;
+  }
+  #datos_tp {
+    margin: 0 5%;
+  }
+  #logo_davinci {
+    margin-left: 25%;
+    margin-top: 25%;
+  }
+  #logo_contenedor{
+    display: inline-block;
+    float: left;
+  }
+  #datos_tp ul{
+    margin-left: 150px;
+  }
 }
