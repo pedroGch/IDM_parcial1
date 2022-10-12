@@ -288,21 +288,6 @@ img{
   border-bottom-color: rgba(255, 255, 255, 0.8);
 }
 
-.container .imgBx {
-  position: relative;
-  width: 50%;
-  height: 111%;
-
-
-}
-
-.container .imgBx img {
-  position: absolute;
-  bottom: 0;
-  max-height: 95%;
-  margin-left: 80px;
-
-}
 
 /* FIN SECCION DE CONTACTO*/
 @media screen and (min-width:576px) {
@@ -310,7 +295,7 @@ img{
     background-image: url(img/logo_resumido_2.jpeg);
     background-position-x: -50px;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: round;
     letter-spacing: 1px;
     color: #e9e4e4;
   }
@@ -341,5 +326,132 @@ img{
 }
 
 @media screen and (min-width:993px) {
+  p{
+    font-size: 1.18rem;
+  }
+
+  h2{
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  #logo{
+    background-size: contain;
+  }
+  nav{
+    padding: 1rem 0;
+  }
+
+  nav>div{
+      display: inline-block;
+      max-width: 200px;
+      padding: 1rem 0;
+      cursor: pointer;
+      border-bottom: none;
+      vertical-align: middle;
+      margin: 0 20px;
+  }
+
+  nav>div:hover{
+    border-bottom: thin solid whitesmoke;
+  }
+
+  .introduccion{
+    border-top: solid 1px white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .centrado{
+    position: absolute;
+    top: -1px;
+    width: 100%;
+  }
+  .introduccion .texto{
+    width: 41%;
+    text-align: left;
+    position: absolute;
+    top: 90px;
+    left: 10px; 
+  }
+  #video_promocional{
+    height: 550px;
+  }
+  .video iframe{
+    height: 230px;
+  }
+
+  .centro_pc{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 25px auto;
+  }
+  .margen_estandar{
+    width: 90%;
+  }
+  .margen_estandar > p {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .centro_pc > img{
+    width: 50%;
+  }
+  .margen_estandar > h2{
+    font-size: 1.5rem;
+  }
+  .personajes{
+    display: inline-block;
+    background-image: none;
+    overflow-x: unset;
+    scroll-snap-type: none;
+    width: 80%;
+    margin: 25px 10%;
+  }
+  .personajes .item {
+    display: flex;
+    margin: 10% auto;
+  }
+  .personajes .item .img_personaje{
+    height: 300px;
+    width: 30%;
+  }
+  .img_personaje > picture img{
+    width: 100%;
+    
+  }
+
+  .personajes .descripcion_personaje{
+    width: 500px;
+  }
+  .galeria > div{
+    display: contents;
+  }
+  .galeria > div > img{   
+    width: calc(40% - 10px);
+    margin:50px;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .container .formBx {
+    width: 100%;
+    display: flex;
+    padding-right: 25px;
+    margin-left: 50px;
+  }
+  .container .formBx form {
+    width: 100%;
+  }
+  .container .imgBx {
+    display: inline-block;
+    width: 50%;
+  }
+  .container .imgBx img {
+    bottom: 0;
+    max-height: 100%;
+    margin-left: 0px; 
+  }
 
 }
