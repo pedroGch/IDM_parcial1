@@ -152,7 +152,6 @@ img{
 
 .personajes .item{
   flex: 0 0 100%;
-  border-radius: 8px;
   scroll-snap-align: center;
 }
 
@@ -307,9 +306,38 @@ img{
 
 /* FIN SECCION DE CONTACTO*/
 @media screen and (min-width:576px) {
- *{
-  background-color: azure;
- }
+  .personajes{
+    background-image: url(img/logo_resumido_2.jpeg);
+    background-position-x: -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    letter-spacing: 1px;
+    color: #e9e4e4;
+  }
+  .personajes .descripcion_personaje{
+    background: rgb(0 0 0 / 20%);
+    backdrop-filter: blur( 13.5px );
+    padding: 20PX;
+    text-shadow: 2px 2px 3px black;
+  }
+  .personajes .item {
+    display: flex;
+  }
+  .personajes .item .img_personaje {
+    height: 500px;
+    width: 100%;
+  }
+  .item:nth-last-child(2) .img_personaje{
+    width: 220%;
+  }
+  .item:nth-last-child(1) .img_personaje{
+    width: 220%;
+  }
+  .container .formBx form .inputBox:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width:993px) {
