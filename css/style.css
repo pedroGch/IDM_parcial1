@@ -244,7 +244,7 @@ img{
 }
 
 .container .formBx form .inputBox input[type="submit"] {
-
+  border-radius: 15px;
   padding: 8px 20px;
   margin-top: -10px;
   width: 320px;
@@ -263,11 +263,6 @@ img{
   background-size: cover;
   background-position-y: -63px;
 
-}
-
-.container .formBx form .inputBox input[type="submit"]:focus {
-  background: var(--blue);
-  color: #fff;
 }
 
 .container .formBx form .inputBox span {
